@@ -1,0 +1,27 @@
+@page
+@model momotest.Pages.Momo.Collections.CheckStatus
+
+@{
+    Layout = null;
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h1>Collection status - @Model.Id</h1>
+        <h3>Status</h3>
+        <p>@Model.Collection.Status</p>
+        <h3>Amount</h3>
+        <p>@Model.Collection.Amount</p>
+        <h3>Currency</h3>
+        <p>@Model.Collection.Currency</p>
+        <h3>Payer</h3>
+        <p>@Model.Collection.Payer.PartyId</p>
+        <h3>Financial transaction id</h3>
+        <p>@Model.Collection.FinancialTransactionId</p>
+        <h3>External id</h3>
+        <p>@Model.Collection.ExternalId</p>
+        <h3>Error code</h3>
+        <p>@Model.Collection.Reason</p>
+        
+    </div>
+</div>

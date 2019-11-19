@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>16e70b3d-d7fb-4945-8aa8-dfcbfba566cf</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MtnMomo.NET" Version="1.0.0-alpha-37" />
+  </ItemGroup>
+</Project>

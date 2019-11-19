@@ -1,0 +1,11 @@
+@page
+@model momotest.Pages.Momo.Collections.Success
+
+@{
+    ViewData["Title"] = "Queued successfully";
+}
+
+
+<p>Collection successfully recorded as <a asp-page="CheckStatus" asp-route-id="@Model.CollectionId">@Model.CollectionId</a>.</p>
+<br/>
+<a asp-page="New">Create new transaction</a>

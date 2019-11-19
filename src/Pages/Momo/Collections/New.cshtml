@@ -1,0 +1,46 @@
+@page
+@model momotest.Pages.Momo.Collections.New
+
+@{
+    ViewData["Title"] = "New collection";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Model.PhoneNumber" class="control-label"></label>
+                <input asp-for="Model.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Model.PhoneNumber" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Model.Amount" class="control-label"></label>
+                <input asp-for="Model.Amount" class="form-control" />
+                <span asp-validation-for="Model.Amount" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Model.ExternalId" class="control-label"></label>
+                <input asp-for="Model.ExternalId" class="form-control" />
+                <span asp-validation-for="Model.ExternalId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model.PayeeNote" class="control-label"></label>
+                <input asp-for="Model.PayeeNote" class="form-control" />
+                <span asp-validation-for="Model.PayeeNote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model.PayerMessage" class="control-label"></label>
+                <input asp-for="Model.PayerMessage" class="form-control" />
+                <span asp-validation-for="Model.PayerMessage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
